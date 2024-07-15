@@ -11,9 +11,9 @@
      <link rel="stylesheet" href="style.css">
     <title>Sirius Creative</title>
   </head>
-  <body class="bg-[#232E40] w-screen ">
+  <body class="bg-[#232E40] max-w-screen">
     <!-- Navbar -->
-    <div class="navbar flex items-center justify-between w-full p-5 px-10 md:px-20 fixed">
+    <div class="navbar flex items-center justify-between w-full p-5 px-10 md:px-20 lg:px-40 fixed bg-[#232E40] z-10 shadow-[0px_11px_20px_20px_#232E40]">
       <div class="nav-title montserrat-900 text-white w-full text-2xl md:text-3xl tracking-tight">
         SIRIUS<span class="text-[#00FED9]">.</span>
       </div>
@@ -23,13 +23,40 @@
       </div>
     </div>
     <!-- Header -->
-    <div class="header h-screen w-full flex justify-center items-center px-10">
-      <div class="header-title montserrat-900 relative">
-        <h1 class="text-6xl md:text-9xl text-white tracking-tight">Welcome</h1>
-        <div class="icon absolute top-10 md:top-[5rem] w-full flex justify-center">
-          <img src="./assets/img/megaphone.png" alt="megaphone" class="w-20 md:w-40">
+    <div class="header h-screen w-full flex justify-center items-center px-10 md:px-20 lg:px-40">
+      <!-- Header Title -->
+      <div class="header-title montserrat-700 relative">
+        <h1 class="text-7xl md:text-[9.5rem] lg:text-[16rem] text-white tracking-tighter">Welcome</h1>
+        <div class="icon absolute top-12 md:top-[6rem] lg:top-40 w-full flex justify-center">
+          <img src="./assets/img/megaphone.png" alt="megaphone" class="w-20 md:w-40 lg:w-60">
         </div>
       </div>
+      <div class="absolute text-white text-center up-down">
+        <p class="text-sm tracking-wider">Lihat Selengkapnya</p>
+        <i class="fa fa-angle-down" aria-hidden="true" style="color: white"></i>
+      </div>
     </div>
+    <!-- About Us -->
+    <div class="about-us px-10 md:px-20 lg:px-40 w-full h-full py-20 md:py-28">
+      <div class="flex flex-col items-center text-white text-center montserrat-500">
+        <h1 class="lg:text-2xl">About Us</h1>
+        <div class="underlined bg-[#00FED9] h-1 w-20 lg:w-28"></div>
+      </div>
+      <div class="about-us-content h-full w-full flex flex-col items-center justify-center mt-16 md:mt-24 mb-10">
+        <div class="about-us-title montserrat-700 relative md:mb-32 lg:mb-20">
+          <h1 class="text-[8.7rem] md:text-[14rem] lg:text-[16rem] text-white tracking-tighter">Who</h1>
+          <div class="icon absolute top-16 md:top-[12rem] lg:top-40 w-full flex justify-center">
+            <img src="./assets/img/brain.png" alt="brain" class="w-32 md:w-52 lg:w-60">
+          </div>
+        </div>
+        <div class="about-us-description montserrat-300 text-white text-center mb-10">
+          <p class="md:text-2xl lg:text-3xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac commodo turpis, eget fringilla erat. Nunc feugiat velit sed suscipit egestas. Duis ullamcorper vitae dolor ac malesuada. Donec placerat vitae odio sed sagittis. Integer eget tempus nisi.</p>
+        </div>
+        <div class="underlined bg-[#00FED9] h-2 w-20 md:w-1/6"></div>
+      </div>
+      <div class="tagline-container bg-white p-7 md:px-16 lg:px-32 text-center montserrat-700 text-2xl md:text-3xl lg:text-5xl w-full">
+        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+      </div>
+     </div>
   </body>
 </html>
